@@ -1,4 +1,4 @@
-@MyTag
+@Login
 Feature: Login on eMAG
 
   Scenario: Login with valid credentials
