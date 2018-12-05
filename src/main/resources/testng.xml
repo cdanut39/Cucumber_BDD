@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Default Suite">
-    <test name="BDDTestFrameworkTestingWebComponent">
+<suite name="Default Suite" parallel="tests" thread-count="5">
+    <test name="Login test">
         <classes>
-            <class name="runner.TestRunner"/>
+            <class name="runner.LoginRunner"/>
+        </classes>
+    </test> <!-- BDDTestFrameworkTestingWebComponent -->
+
+
+    <test name="Search test">
+        <classes>
+            <class name="runner.SearchRunner"/>
         </classes>
     </test> <!-- BDDTestFrameworkTestingWebComponent -->
 </suite> <!-- Default Suite -->

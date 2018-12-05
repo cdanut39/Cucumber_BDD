@@ -8,7 +8,6 @@
     <artifactId>BDD.Test.Framework.Testing.Web.Component</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
     <build>
         <plugins>
             <plugin>
@@ -20,17 +19,17 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.20.1</version>
-                <configuration>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
-                    </suiteXmlFiles>
-                    <printSummary>true</printSummary>
-                </configuration>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-surefire-plugin</artifactId>-->
+                <!--<version>2.20.1</version>-->
+                <!--<configuration>-->
+                    <!--<suiteXmlFiles>-->
+                        <!--<suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>-->
+                    <!--</suiteXmlFiles>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -56,6 +55,122 @@
                     </dependency>
                 </dependencies>
             </plugin>
+
+            <plugin>
+                <groupId>com.github.temyers</groupId>
+                <artifactId>cucumber-jvm-parallel-plugin</artifactId>
+                <version>2.1.0</version>
+                <executions>
+                    <execution>
+                        <id>generateRunners</id>
+                        <phase>generate-test-sources</phase>
+                        <goals>
+                            <goal>generateRunners</goal>
+                        </goals>
+                        <configuration>
+                            <!-- Mandatory -->
+                            <!-- comma separated list of package names to scan for glue code -->
+                            <glue>stepDefinitions</glue>
+                            <outputDirectory>${project.build.directory}/generated-test-sources/cucumber
+                            </outputDirectory>
+                            <!-- The directory, which must be in the root of the runtime classpath, containing your feature files.  -->
+                            <featuresDirectory>src/main/java/features/</featuresDirectory>
+                            <!-- Directory where the cucumber report files shall be written  -->
+                            <cucumberOutputDir>target/cucumber-parallel</cucumberOutputDir>
+                            <!-- comma separated list of output formats json,html,rerun.txt -->
+                            <format>json,html</format>
+                            <!-- CucumberOptions.strict property -->
+                            <strict>true</strict>
+                            <!-- CucumberOptions.monochrome property -->
+                            <monochrome>true</monochrome>
+                            <!-- The tags to run, maps to CucumberOptions.tags property you can pass ANDed tags like "@tag1","@tag2" and ORed tags like "@tag1,@tag2,@tag3" -->
+                            <tags></tags>
+                            <!-- If set to true, only feature files containing the required tags shall be generated. -->
+                            <filterFeaturesByTags>false</filterFeaturesByTags>
+                            <!-- Generate TestNG runners instead of default JUnit ones. -->
+                            <useTestNG>true</useTestNG>
+                            <!-- The naming scheme to use for the generated test classes.  One of 'simple' or 'feature-title' -->
+                            <namingScheme>simple</namingScheme>
+                            <!-- The class naming pattern to use.  Only required/used if naming scheme is 'pattern'.-->
+                            <namingPattern>Parallel{c}IT</namingPattern>
+                            <!-- One of [SCENARIO, FEATURE]. SCENARIO generates one runner per scenario.  FEATURE generates a runner per feature. -->
+                            <parallelScheme>FEATURE</parallelScheme>
+                            <!-- This is optional, required only if you want to specify a custom template for the generated sources (this is a relative path) -->
+                            <!--<customVmTemplate>src/test/resources/cucumber-custom-runner.vm</customVmTemplate>-->
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.trivago.rta</groupId>
+                <artifactId>cluecumber-report-plugin</artifactId>
+                <version>1.5.0</version>
+                <executions>
+                    <execution>
+                        <id>report</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>reporting</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <sourceJsonReportDirectory>${project.build.directory}\cucumber-parallel</sourceJsonReportDirectory>
+                    <generatedHtmlReportDirectory>${project.build.directory}\test-report</generatedHtmlReportDirectory>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.20.1</version>
+                <configuration>
+                    <forkCount>4</forkCount>
+                    <reuseForks>true</reuseForks>
+                    <includes>
+                        <include>**/*IT.class</include>
+                    </includes>
+                    <testFailureIgnore>true</testFailureIgnore>
+                </configuration>
+            </plugin>
+
+
+            <!--<plugin>-->
+                <!--<groupId>net.masterthought</groupId>-->
+                <!--<artifactId>maven-cucumber-reporting</artifactId>-->
+                <!--<version>4.2.3</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>execution</id>-->
+                        <!--<phase>verify</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>generate</goal>-->
+                        <!--</goals>-->
+                        <!--<configuration>-->
+                            <!--<projectName>cucumber-jvm-example</projectName>-->
+                            <!--&lt;!&ndash; optional, per documentation set this to "true" to bypass generation of Cucumber Reports entirely, defaults to false if not specified &ndash;&gt;-->
+                            <!--<skip>false</skip>-->
+                            <!--&lt;!&ndash; output directory for the generated report &ndash;&gt;-->
+                            <!--<outputDirectory>${project.build.directory}/cucumber-JVM-reports</outputDirectory>-->
+                            <!--&lt;!&ndash; optional, defaults to outputDirectory if not specified &ndash;&gt;-->
+                            <!--<inputDirectory>${project.build.directory}/cucumber-parallel</inputDirectory>-->
+                            <!--<jsonFiles>-->
+                                <!--&lt;!&ndash; supports wildcard or name pattern &ndash;&gt;-->
+                                <!--<param>**/*.json</param>-->
+                            <!--</jsonFiles>-->
+                            <!--&lt;!&ndash; optional, defaults to outputDirectory if not specified &ndash;&gt;-->
+                            <!--<classificationDirectory>${project.build.directory}/classifications</classificationDirectory>-->
+                            <!--<classificationFiles>-->
+                                <!--&lt;!&ndash; supports wildcard or name pattern &ndash;&gt;-->
+                                <!--<param>sample.properties</param>-->
+                                <!--<param>other.properties</param>-->
+                            <!--</classificationFiles>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
+
         </plugins>
         <resources>
             <resource>
@@ -69,6 +184,12 @@
 
 
         <!-- Cucumber -->
+
+        <dependency>
+            <groupId>com.github.temyers</groupId>
+            <artifactId>cucumber-jvm-parallel-plugin</artifactId>
+            <version>2.1.0</version>
+        </dependency>
 
 
         <dependency>
@@ -157,6 +278,12 @@
 
         <!-- ExtentReport -->
 
+        <!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>cucumber-reporting</artifactId>
+            <version>4.2.3</version>
+        </dependency>
 
         <dependency>
             <groupId>com.vimalselvam</groupId>
@@ -261,6 +388,28 @@
             <artifactId>testng</artifactId>
             <version>7.0.0-beta1</version>
         </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>23.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.maven/maven-core -->
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-core</artifactId>
+            <version>3.5.2</version>
+        </dependency>
+
+
 
     </dependencies>
 

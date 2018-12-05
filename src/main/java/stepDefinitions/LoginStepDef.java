@@ -62,11 +62,11 @@ public class LoginStepDef extends TestBase {
 
     }
 
-    @After
-    public void tearDown(Scenario scenario) throws IOException {
-        takeScreenShot(scenario);
-        driver.quit();
-    }
+//    @After
+//    public void tearDown(Scenario scenario) throws IOException {
+//        takeScreenShot(scenario);
+//        driver.quit();
+//    }
 
 
 }
