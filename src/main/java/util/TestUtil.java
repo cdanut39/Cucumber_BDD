@@ -67,33 +67,33 @@ public class TestUtil extends TestBase {
 
 
 
-    public static String takeScreenshotAtEndOfTest(String testName) throws IOException {
+//    public static String takeScreenshotAtEndOfTest(String testName) throws IOException {
+//
+//        TakesScreenshot ts = (TakesScreenshot) driver;
+//
+//        File source = ts.getScreenshotAs(OutputType.FILE);
+//
+//
+//        String destination = System.getProperty("user.dir") + "/FailedTestsScreenshot/" + testName +
+//                getCurrentDateAndTime() + ".png";
+//
+//        File finalDestination = new File(destination);
+//
+//        FileUtils.copyFile(source, finalDestination);
+//
+//        return destination;
+//    }
+//
+//
+//
+//    public static void takeScreenShotOnFAILURE(Scenario scenario) throws IOException {
+//
+//        if (scenario.isFailed()) {
+//
+//            takeScreenshotAtEndOfTest(scenario.getName());
+//        }
 
-        TakesScreenshot ts = (TakesScreenshot) driver;
-
-        File source = ts.getScreenshotAs(OutputType.FILE);
-
-
-        String destination = System.getProperty("user.dir") + "/FailedTestsScreenshot/" + testName +
-                getCurrentDateAndTime() + ".png";
-
-        File finalDestination = new File(destination);
-
-        FileUtils.copyFile(source, finalDestination);
-
-        return destination;
-    }
-
-
-
-    public static void takeScreenShotOnFAILURE(Scenario scenario) throws IOException {
-
-        if (scenario.isFailed()) {
-
-            takeScreenshotAtEndOfTest(scenario.getName());
-        }
-
-    }
+//    }
     public static void takeScreenShot(Scenario scenario){
         if (scenario.isFailed()){
             final byte[] screenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);

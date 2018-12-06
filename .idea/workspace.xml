@@ -35,19 +35,85 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="396" column="25" selection-start-line="396" selection-start-column="25" selection-end-line="396" selection-end-column="25" />
+            <state relative-caret-position="790">
+              <caret line="417" selection-start-line="417" selection-end-line="417" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$MAVEN_REPOSITORY$/org/testng/testng/7.0.0-beta1/testng-7.0.0-beta1.pom">
+        <entry file="file://$PROJECT_DIR$/src/main/java/util/WebEventListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204" />
+            <state relative-caret-position="1071">
+              <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#497#498#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#625#626#0" expanded="true" />
+                <element signature="e#685#686#0" expanded="true" />
+                <element signature="e#1214#1215#0" expanded="true" />
+                <element signature="e#1275#1276#0" expanded="true" />
+                <element signature="e#1331#1332#0" expanded="true" />
+                <element signature="e#1391#1392#0" expanded="true" />
+                <element signature="e#1446#1447#0" expanded="true" />
+                <element signature="e#1505#1506#0" expanded="true" />
+                <element signature="e#1564#1565#0" expanded="true" />
+                <element signature="e#1623#1624#0" expanded="true" />
+                <element signature="e#1681#1682#0" expanded="true" />
+                <element signature="e#1739#1740#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/runner/LoginRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/stepDefinitions/LoginStepDef.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="795">
+              <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1241#1242#0" expanded="true" />
+                <element signature="e#1286#1287#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/util/TestUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="95" column="6" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-265">
+              <caret line="250" selection-start-line="250" selection-end-line="250" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -76,7 +142,11 @@
       <find>scope</find>
       <find>plugin</find>
       <find>core</find>
+      <find>System.out.println</find>
     </findStrings>
+    <replaceStrings>
+      <replace>log.info</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -104,9 +174,7 @@
         <option value="$PROJECT_DIR$/src/main/java/extentReport/report.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pages/PasswordPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/EmailPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/WebEventListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/DefaultPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/TestUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/base/TestBase.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/java/features/Login.feature" />
@@ -117,12 +185,15 @@
         <option value="$PROJECT_DIR$/src/main/java/config/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/runner/LoginRunner.java" />
         <option value="$PROJECT_DIR$/src/main/java/runner/SearchRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/stepDefinitions/LoginStepDef.java" />
         <option value="$PROJECT_DIR$/src/main/java/stepDefinitions/SearchStepDef.java" />
         <option value="$PROJECT_DIR$/src/main/resources/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/java/features/Search.feature" />
         <option value="$PROJECT_DIR$/target/generated-test-sources/cucumber/Parallel01IT.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/util/TestUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stepDefinitions/LoginStepDef.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/WebEventListener.java" />
       </list>
     </option>
   </component>
@@ -154,7 +225,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -198,18 +269,27 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="runner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BDDTestFrameworkTestingWebComponent" type="b2602c69:ProjectViewProjectNode" />
               <item name="BDD Test Framework" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BDDTestFrameworkTestingWebComponent" type="b2602c69:ProjectViewProjectNode" />
               <item name="BDD Test Framework" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BDDTestFrameworkTestingWebComponent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BDD Test Framework" type="462c0819:PsiDirectoryNode" />
+              <item name="test-output" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -218,7 +298,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544025332323" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544089384163" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../seleniumReporting" />
@@ -257,7 +337,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.D:/workspace/BDD Test Framework/src/main/resources/testng.xml">
+  <component name="RunManager" selected="TestNG.LoginRunner">
     <configuration name="Feature: Search" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/java/features/Search.feature" />
@@ -333,8 +413,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.D:/workspace/BDD Test Framework/src/main/resources/testng.xml" />
         <item itemvalue="TestNG.LoginRunner" />
+        <item itemvalue="TestNG.D:/workspace/BDD Test Framework/src/main/resources/testng.xml" />
         <item itemvalue="Cucumber java.Scenario: Search a valid product" />
         <item itemvalue="Cucumber java.Feature: Search" />
         <item itemvalue="TestNG.D:/workspace/BDD Test Framework/testng.xml" />
@@ -355,18 +435,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRunner_(4) - 2018.12.04 at 14h 10m 12s.xml">
-      <configuration name="TestRunner (4)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginRunner - 2018.12.05 at 09h 21m 28s.xml">
-      <configuration name="LoginRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="D__workspace_BDD_Test_Framework_src_main_resources_testng_xml - 2018.12.05 at 09h 23m 36s.xml">
-      <configuration name="D:/workspace/BDD Test Framework/src/main/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="D__workspace_BDD_Test_Framework_src_main_resources_testng_xml - 2018.12.05 at 09h 50m 23s.xml">
-      <configuration name="D:/workspace/BDD Test Framework/src/main/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="D__workspace_BDD_Test_Framework_src_main_resources_testng_xml - 2018.12.05 at 09h 51m 22s.xml">
       <configuration name="D:/workspace/BDD Test Framework/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
@@ -385,6 +453,18 @@
     <history-entry file="D__workspace_BDD_Test_Framework_src_main_resources_testng_xml - 2018.12.05 at 10h 03m 12s.xml">
       <configuration name="D:/workspace/BDD Test Framework/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="D__workspace_BDD_Test_Framework_src_main_resources_testng_xml - 2018.12.06 at 10h 40m 43s.xml">
+      <configuration name="D:/workspace/BDD Test Framework/src/main/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginRunner - 2018.12.06 at 10h 47m 05s.xml">
+      <configuration name="LoginRunner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginRunner - 2018.12.06 at 10h 51m 21s.xml">
+      <configuration name="LoginRunner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginRunner - 2018.12.06 at 10h 56m 12s.xml">
+      <configuration name="LoginRunner" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -398,7 +478,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49729145" visible="true" weight="0.28731343" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49729145" visible="true" weight="0.29051173" />
       <window_info id="Structure" order="1" sideWeight="0.50270855" side_tool="true" weight="0.28411514" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -421,7 +501,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.15085287" />
+      <window_info active="true" anchor="right" id="Maven" order="4" visible="true" weight="0.15085287" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -463,25 +543,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.IdeaIC2018.3/system/temp-testng-customsuite.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/automation/cucumber-extentsreport-3.1.1.jar!/com/vimalselvam/cucumber/listener/Reporter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-          <folding>
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/cucumber-reports/ExtentReport.html" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/EmailPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -516,16 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/TestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5-sources.jar!/cucumber/api/java/After.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -541,16 +592,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#727#728#0" expanded="true" />
             <element signature="e#766#767#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/runner/LoginRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="140" selection-start-line="7" selection-start-column="140" selection-end-line="7" selection-end-column="140" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -576,18 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/stepDefinitions/LoginStepDef.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="948">
-          <caret line="68" column="7" selection-start-line="64" selection-start-column="6" selection-end-line="68" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1286#1287#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -738,24 +767,11 @@
     <entry file="file://$PROJECT_DIR$/target/maven-archiver/pom.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/test-report/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/dependency-check-report.html" />
     <entry file="file://$PROJECT_DIR$/target/generated-test-sources/cucumber/Parallel01IT.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="63" lean-forward="true" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/WebEventListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="80" column="11" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -770,14 +786,88 @@
       </provider>
     </entry>
     <entry file="file://$MAVEN_REPOSITORY$/org/testng/testng/7.0.0-beta1/testng-7.0.0-beta1.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="396" column="25" selection-start-line="396" selection-start-column="25" selection-end-line="396" selection-end-column="25" />
+        <state relative-caret-position="790">
+          <caret line="417" selection-start-line="417" selection-end-line="417" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-report/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-265">
+          <caret line="250" selection-start-line="250" selection-end-line="250" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/2018-12-06T10-29-24_983-jvmRun2.dump">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/TestUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="95" column="6" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/WebEventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1275#1276#0" expanded="true" />
+            <element signature="e#1331#1332#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+            <element signature="e#1446#1447#0" expanded="true" />
+            <element signature="e#1505#1506#0" expanded="true" />
+            <element signature="e#1564#1565#0" expanded="true" />
+            <element signature="e#1623#1624#0" expanded="true" />
+            <element signature="e#1681#1682#0" expanded="true" />
+            <element signature="e#1739#1740#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stepDefinitions/LoginStepDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1241#1242#0" expanded="true" />
+            <element signature="e#1286#1287#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/runner/LoginRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

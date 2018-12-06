@@ -16,7 +16,6 @@ import pages.PasswordPage;
 import java.io.IOException;
 
 import static util.TestUtil.takeScreenShot;
-import static util.TestUtil.takeScreenShotOnFAILURE;
 
 
 public class LoginStepDef extends TestBase {
@@ -62,11 +61,11 @@ public class LoginStepDef extends TestBase {
 
     }
 
-//    @After
-//    public void tearDown(Scenario scenario) throws IOException {
-//        takeScreenShot(scenario);
-//        driver.quit();
-//    }
+    @After
+    public void tearDown(Scenario scenario) throws IOException {
+        takeScreenShot(scenario);
+        driver.quit();
+    }
 
 
 }

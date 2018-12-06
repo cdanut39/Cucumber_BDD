@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: Parallel02IT
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 43.43 s <<< FAILURE! - in Parallel02IT
-feature(Parallel02IT)  Time elapsed: 42.406 s  <<< FAILURE!
-cucumber.runtime.CucumberException: java.lang.AssertionError: did not expect to find [true] but found [false]
-Caused by: java.lang.AssertionError: did not expect to find [true] but found [false]
-
