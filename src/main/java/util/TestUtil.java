@@ -98,7 +98,7 @@ public class TestUtil extends TestBase {
         if (scenario.isFailed()){
             final byte[] screenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot,"image/png");
-        }  
+        }
     }
 
 }

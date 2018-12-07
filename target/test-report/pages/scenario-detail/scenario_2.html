@@ -1,0 +1,469 @@
+<!doctype html>
+<!--
+    Copyright 2018 trivago N.V.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+    -->
+<html lang="en">
+ <head>
+  <base href="../..">  
+  <meta charset="utf-8"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <meta name="description" content="Cluecumber Report Plugin [1.5.0] - Scenario Details"> 
+  <meta name="author" content="Cluecumber Report Plugin [1.5.0]"> 
+  <title>Scenario Details - 2018/12/07 14:01:38</title> 
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
+  <link rel="stylesheet" href="css/cluecumber.css" type="text/css"> 
+  <link rel="stylesheet" href="css/cluecumber_custom.css"> 
+  <link rel="stylesheet" href="css/datatables.min.css"> 
+  <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css"> 
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css"> 
+ </head> 
+ <body> 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
+   <span class="navbar-brand">Scenario Details</span> 
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
+   <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+    <ul class="navbar-nav mr-auto"> 
+     <li class="nav-item"> <a class="nav-link" href="pages/feature-summary.html">All Features</a> </li> 
+     <li class="nav-item"> <a class="nav-link" href="pages/tag-summary.html">All Tags</a> </li> 
+     <li class="nav-item"> <a class="nav-link" href="pages/scenario-sequence.html">Scenario Sequence</a> </li> 
+     <li class="nav-item"> <a class="nav-link" href="index.html">All Scenarios</a> </li> 
+    </ul> 
+    <span class="text-light">2018/12/07 14:01:38</span> 
+   </div> 
+  </nav> 
+  <main role="main" class="container"> 
+   <div class="cluecumber-template"> 
+    <div class="pb-2 mt-4 mb-2 border-bottom"> 
+     <h3>Scenario 'Search a valid product'</h3> 
+    </div> 
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = (obj.contentWindow.document.body.scrollHeight + 20) + 'px';
+        }
+    </script> 
+    <div class="row"> 
+     <div class="col-sm-8"> 
+      <div class="card h-100"> 
+       <div class="card-header">
+        Scenario Result Chart
+       </div> 
+       <div class="card-body"> 
+        <div id="canvas-holder" class="w-100 text-center"> 
+         <canvas id="chart-area" class="w-100"></canvas> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="col-sm-4"> 
+      <div class="card h-100"> 
+       <div class="card-header">
+        Scenario Information
+       </div> 
+       <div class="card-body"> 
+        <ul class="list-group list-group-flush"> 
+         <li class="list-group-item">3 Step(s)</li> 
+         <li class="list-group-item"> 1 <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> 1 <i class="text-danger cluecumber-icon icon-failed" data-toggle="tooltip" title="failed"></i> 1 <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"></i> </li> 
+         <li class="list-group-item">Duration: 0m 29s 424ms</li> 
+         <li class="list-group-item"> <a href="pages/tag-scenarios/tag_SearchMultipleProducts.html">@SearchMultipleProducts</a> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <ul class="list-group list-group-flush"> 
+     <div class="col-sm-12"> 
+      <div class="card h-100"> 
+       <div class="card-header">
+        Steps
+       </div> 
+       <div class="card-body"> 
+        <li class="list-group-item"> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           1.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="SearchStepDef.user_is_logged_in()"> Given user is logged in </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 13s 848ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> 
+          </div> 
+         </div> 
+         <div class="row row_failed"> 
+          <div class="col-1 text-left">
+           2.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="SearchStepDef.user_search_for_product(String)"> When user search for <strong>pirelli</strong> </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 15s 071ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-danger cluecumber-icon icon-failed" data-toggle="tooltip" title="failed"></i> 
+          </div> 
+          <div class="row w-100 p-3 m-0 scenarioErrorMessage"> 
+           <div class="w-100 text-left border border-danger"> 
+            <pre class="text-danger small p-2">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"searchboxTrigger"}
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'SVRODK00184', ip: '172.17.9.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58077}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\DANUT~1.CRI\AppData\Local\Temp\scoped_dir14804_11350}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=70.0.3538.110, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 01e295f2c84458a9e3f75f666c16bc3c
+*** Element info: {Using=id, value=searchboxTrigger}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:462)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy17.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at pages.HomePage.searchProduct(HomePage.java:44)
+	at stepDefinitions.SearchStepDef.user_search_for_product(SearchStepDef.java:44)
+	at ✽.When user search for pirelli(D:/workspace/BDD Test Framework/src/main/java/features/Search.feature:14)
+</pre> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="row row_skipped"> 
+          <div class="col-1 text-left">
+           3.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="SearchStepDef.a_page_with_expected_product_is_displayed(String)"> Then a page with <strong>Anvelopa</strong> is displayed </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 000ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"></i> 
+          </div> 
+          <div class="row w-100 p-3 m-0 scenarioAttachment"> 
+           <div class="w-100 text-left m-auto"> 
+            <a class="grouped_elements" rel="images" href="attachments/attachment002.png"> <img src="attachments/attachment002.png" style="max-width: 100%"> </a> 
+           </div> 
+          </div> 
+         </div> </li> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="col-sm-12"> 
+      <div class="card h-100"> 
+       <div class="card-header">
+        After Hooks
+       </div> 
+       <div class="card-body"> 
+        <li class="list-group-item"> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           1.
+          </div> 
+          <div class="col-8 text-left"> 
+           <i>LoginStepDef.tearDown(Scenario)</i> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 398ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> 
+          </div> 
+         </div> 
+         <div class="row row_failed"> 
+          <div class="col-1 text-left">
+           2.
+          </div> 
+          <div class="col-8 text-left"> 
+           <i>SearchStepDef.tearDown(Scenario)</i> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 105ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-danger cluecumber-icon icon-failed" data-toggle="tooltip" title="failed"></i> 
+          </div> 
+          <div class="row w-100 p-3 m-0 scenarioErrorMessage"> 
+           <div class="w-100 text-left border border-danger"> 
+            <pre class="text-danger small p-2">org.openqa.selenium.NoSuchSessionException: invalid session id
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'SVRODK00184', ip: '172.17.9.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58077}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\DANUT~1.CRI\AppData\Local\Temp\scoped_dir14804_11350}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=70.0.3538.110, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 01e295f2c84458a9e3f75f666c16bc3c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:703)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:388)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy17.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at util.TestUtil.takeScreenShot(TestUtil.java:99)
+	at stepDefinitions.SearchStepDef.tearDown(SearchStepDef.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+	at org.testng.TestNG.runSuites(TestNG.java:997)
+	at org.testng.TestNG.run(TestNG.java:965)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeLazy(TestNGDirectoryTestSuite.java:123)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:90)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+</pre> 
+           </div> 
+          </div> 
+         </div> </li> 
+       </div> 
+      </div> 
+     </div> 
+    </ul> 
+   </div> 
+  </main> 
+  <footer class="footer navbar-dark bg-dark"> 
+   <div class="container-fluid"> 
+    <span class="text-muted">Generated by Cluecumber Report Plugin [1.5.0], 2018/12/07 14:01:38.</span> 
+   </div> 
+  </footer> 
+  <script src="js/jquery.min.js"></script> 
+  <script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/datatables.min.js"></script> 
+  <script src="js/jquery.fancybox.min.js"></script> 
+  <script src="js/Chart.bundle.min.js"></script> 
+  <script>
+    $(document).ready(function () {
+        // Data tables
+        $('.renderAsDataTable').on('draw.dt', function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        }).DataTable({
+            "oLanguage": {
+                "sSearch": "Search:"
+            },
+            "pageLength": 25
+        });
+
+        // Lightbox
+        $("a.grouped_elements").fancybox();
+
+        // Tool tips
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // Chart
+            var canvas = document.getElementById('chart-area');
+            var ctx = canvas.getContext("2d");
+            var chart = new Chart(ctx, eval({
+  "data": {
+    "labels": [
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "After 0",
+      "After 1",
+      "After 2"
+    ],
+    "datasets": [
+      {
+        "data": [
+          13848,
+          0,
+          0,
+          398,
+          0
+        ],
+        "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)"
+        ],
+        "label": "passed",
+        "stack": "complete"
+      },
+      {
+        "data": [
+          0,
+          15071,
+          0,
+          0,
+          105
+        ],
+        "backgroundColor": [
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)"
+        ],
+        "label": "failed",
+        "stack": "complete"
+      },
+      {
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "backgroundColor": [
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)"
+        ],
+        "label": "skipped",
+        "stack": "complete"
+      }
+    ]
+  },
+  "options": {
+    "scales": {
+      "xAxes": [
+        {
+          "ticks": {
+            "min": 0,
+            "display": true
+          },
+          "stacked": true,
+          "scaleLabel": {
+            "display": true,
+            "labelString": "Step(s)"
+          },
+          "stepSize": 0.0
+        }
+      ],
+      "yAxes": [
+        {
+          "ticks": {
+            "min": 0,
+            "display": true
+          },
+          "stacked": true,
+          "scaleLabel": {
+            "display": true,
+            "labelString": "Step Runtime"
+          },
+          "stepSize": 0.0
+        }
+      ]
+    }
+  },
+  "type": "bar"
+}));
+
+            var original;
+            switch (chart.config.type) {
+                case "pie":
+                    original = Chart.defaults.pie.legend.onClick;
+                    break;
+                default:
+                    original = Chart.defaults.global.legend.onClick;
+                    break;
+            }
+
+            chart.options.legend.onClick = function (evt, label) {
+                original.call(this, evt, label);
+
+                var card = $("#card_" + label.text);
+                label.hidden ? card.show() : card.hide();
+
+                var row = $(".row_" + label.text);
+                label.hidden ? row.show() : row.hide();
+            };
+    })
+</script>   
+ </body>
+</html>

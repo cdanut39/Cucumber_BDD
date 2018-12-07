@@ -53,12 +53,11 @@ public class SearchStepDef extends TestBase {
         }
     }
 
-//    @After
-//    public void tearDown() throws IOException {
-////        takeScreenShot(scenario);
-////        System.out.println("++++++++++++++++++++++++++"+scenario.toString());
-//        driver.quit();
-//    }
+    @After
+    public void tearDown(Scenario scenario) throws IOException {
+        takeScreenShot(scenario);
+        driver.close();
+    }
 
 
 }

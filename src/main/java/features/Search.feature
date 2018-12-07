@@ -17,4 +17,4 @@ Feature: Search functionality
     Examples:
       | product | category |
       | pirelli | Anvelopa |
-      | nokia   | Telefon  |
+      | pirelli | Anvelopa |
