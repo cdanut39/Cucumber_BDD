@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="54674" started-at="2018-12-07T14:00:32 EET" finished-at="2018-12-07T14:01:27 EET">
+  <suite name="Surefire suite" duration-ms="49984" started-at="2018-12-10T10:01:39 EET" finished-at="2018-12-10T10:02:29 EET">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Parallel02IT@335eadca]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="54674" started-at="2018-12-07T14:00:32 EET" finished-at="2018-12-07T14:01:27 EET">
+    <test name="Surefire test" duration-ms="49984" started-at="2018-12-10T10:01:39 EET" finished-at="2018-12-10T10:02:29 EET">
       <class name="Parallel02IT">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Parallel02IT@335eadca]" name="setUpClass" is-config="true" duration-ms="442" started-at="2018-12-07T14:00:32 EET" finished-at="2018-12-07T14:00:32 EET">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Parallel02IT@335eadca]" name="setUpClass" is-config="true" duration-ms="349" started-at="2018-12-10T10:01:39 EET" finished-at="2018-12-10T10:01:39 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Parallel02IT@335eadca]" name="feature" duration-ms="54009" started-at="2018-12-07T14:00:33 EET" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-12-07T14:01:27 EET">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Parallel02IT@335eadca]" name="feature" duration-ms="49453" started-at="2018-12-10T10:01:39 EET" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-12-10T10:02:28 EET">
           <params>
             <param index="0">
               <value>
@@ -24,7 +24,7 @@
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"searchboxTrigger"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Contul meu ']"}
   (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -32,12 +32,12 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
 System info: host: 'SVRODK00184', ip: '172.17.9.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58077}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\DANUT~1.CRI\AppData\Local\Temp\scoped_dir14804_11350}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=70.0.3538.110, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 01e295f2c84458a9e3f75f666c16bc3c
-*** Element info: {Using=id, value=searchboxTrigger}]]>
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54077}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\DANUT~1.CRI\AppData\Local\Temp\scoped_dir12792_21685}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=70.0.3538.110, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2d487e9306228d01944c377563821978
+*** Element info: {Using=xpath, value=//span[text()='Contul meu ']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"searchboxTrigger"}
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Contul meu ']"}
   (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -45,9 +45,9 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
 System info: host: 'SVRODK00184', ip: '172.17.9.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58077}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\DANUT~1.CRI\AppData\Local\Temp\scoped_dir14804_11350}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=70.0.3538.110, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 01e295f2c84458a9e3f75f666c16bc3c
-*** Element info: {Using=id, value=searchboxTrigger}
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54077}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\DANUT~1.CRI\AppData\Local\Temp\scoped_dir12792_21685}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=70.0.3538.110, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2d487e9306228d01944c377563821978
+*** Element info: {Using=xpath, value=//span[text()='Contul meu ']}
 at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -81,7 +81,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader
 at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"searchboxTrigger"}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Contul meu ']"}
   (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -89,9 +89,9 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
 System info: host: 'SVRODK00184', ip: '172.17.9.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58077}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\DANUT~1.CRI\AppData\Local\Temp\scoped_dir14804_11350}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=70.0.3538.110, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 01e295f2c84458a9e3f75f666c16bc3c
-*** Element info: {Using=id, value=searchboxTrigger}
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54077}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\DANUT~1.CRI\AppData\Local\Temp\scoped_dir12792_21685}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=70.0.3538.110, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2d487e9306228d01944c377563821978
+*** Element info: {Using=xpath, value=//span[text()='Contul meu ']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -105,8 +105,8 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:462)
-at org.openqa.selenium.By$ById.findElement(By.java:218)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -117,17 +117,21 @@ at com.sun.proxy.$Proxy17.findElement(Unknown Source)
 at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
-at pages.HomePage.searchProduct(HomePage.java:44)
-at stepDefinitions.SearchStepDef.user_search_for_product(SearchStepDef.java:44)
-at ✽.When user search for pirelli(D:/workspace/BDD Test Framework/src/main/java/features/Search.feature:14)
+at com.sun.proxy.$Proxy20.getCoordinates(Unknown Source)
+at org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:67)
+at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:43)
+at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)
+at pages.DefaultPage.clickOnSignInButton(DefaultPage.java:26)
+at stepDefinitions.SearchStepDef.user_is_logged_in(SearchStepDef.java:34)
+at ✽.Given user is logged in(D:/workspace/BDD Test Framework/src/main/java/features/Search.feature:13)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Parallel02IT@335eadca]" name="tearDownClass" is-config="true" duration-ms="28" started-at="2018-12-07T14:01:27 EET" finished-at="2018-12-07T14:01:27 EET">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Parallel02IT@335eadca]" name="tearDownClass" is-config="true" duration-ms="47" started-at="2018-12-10T10:02:29 EET" finished-at="2018-12-10T10:02:29 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
