@@ -11,10 +11,10 @@ Feature: Search functionality
   @SearchMultipleProducts
   Scenario Outline: Search a valid product
     Given user is logged in
-    When user search for <product>
-    Then a page with <category> is displayed
+    When user search for "<product>"
+    Then a page with "<category>" is displayed
 
     Examples:
       | product | category |
       | pirelli | Anvelopa |
-      | pirelli | Anvelopa |
+      | nokia   | Telefon  |

@@ -3,10 +3,11 @@ package stepDefinitions;
 import base.TestBase;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
-import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.apache.velocity.runtime.log.NullLogChute;
 import org.testng.Assert;
 import pages.*;
 
@@ -23,12 +24,9 @@ public class SearchStepDef extends TestBase {
     HomePage homePage;
     ResultsPage resultsPage;
 
-//    @Before
-//    public void setUp() {
-//    }
 
     @Given("^user is logged in$")
-    public void user_is_logged_in() {
+    public void user_is_logged_in() throws Exception {
         TestBase.intialization();
         defaultPage = new DefaultPage();
         emailPage = defaultPage.clickOnSignInButton();
@@ -39,10 +37,11 @@ public class SearchStepDef extends TestBase {
 
     }
 
-    @When("^user search for (.*)$")
+
+    @When("^user search for \"(.*)\"$")
     public void user_search_for_product(String productName) {
         resultsPage = homePage.searchProduct(productName);
-        resultsPage.clickOnFirstProductCategory();
+//        resultsPage.clickOnFirstProductCategory();
 
     }
 
@@ -53,11 +52,6 @@ public class SearchStepDef extends TestBase {
         }
     }
 
-    @After
-    public void tearDown(Scenario scenario) throws IOException {
-        takeScreenShot(scenario);
-        driver.close();
-    }
 
 
 }

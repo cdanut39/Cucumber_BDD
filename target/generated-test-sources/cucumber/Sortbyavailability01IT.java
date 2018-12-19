@@ -2,10 +2,10 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(strict = true,
-features = {"D:/workspace/BDD Test Framework/src/main/java/features/Login.feature"},
+features = {"D:/workspace/BDD Test Framework/src/main/java/features/SortByAvailability.feature"},
 plugin = {"json:target/cucumber-parallel/1.json", "html:target/cucumber-parallel/1.html"},
 monochrome = true,
-tags = {},
+tags = {"@SortByAvailability"},
 glue = { "stepDefinitions" })
-public class Parallel01IT extends AbstractTestNGCucumberTests {
+public class Sortbyavailability01IT extends AbstractTestNGCucumberTests {
 }

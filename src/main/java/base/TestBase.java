@@ -1,8 +1,13 @@
 package base;
 
+import config.Constants;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import util.TestUtil;
@@ -14,6 +19,8 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import static util.TestUtil.takeScreenShot;
+
 public class TestBase {
 
     public static WebDriver driver;
@@ -21,36 +28,52 @@ public class TestBase {
     public static WebEventListener webEventListener;
     public static Properties prop;
     public static WebDriverWait wait;
-    public static final String PROPERTIES_PATH = "D:\\workspace\\BDD Test Framework\\src\\main\\java\\config\\config.properties";
+
 
     public TestBase() {
         try {
 
             prop = new Properties();
-            FileInputStream fis = new FileInputStream(PROPERTIES_PATH);
+            FileInputStream fis = new FileInputStream(Constants.PROPERTIES_PATH);
             prop.load(fis);
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.out.println("The properties file couldn't be found in the specified location ");
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Couldn't read information from specified properties file");
         }
-
     }
 
     public static void intialization() {
         String browserName = prop.getProperty("browser");
-        System.out.println(browserName);
-        if (browserName.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "src/main/resources/chrome driver/chromedriver.exe");
-            driver = new ChromeDriver();
-            wait = new WebDriverWait(driver, 10);
-        } else if (browserName.equals("firefox")) {
-            System.setProperty("webdriver.gecko.driver", "src/main/resources/firefox driver/geckodriver.exe");
-            driver = new FirefoxDriver();
+        try {
+            switch (browserName) {
+                case "chrome":
+                    if (driver == null) {
+                        WebDriverManager.chromedriver().setup();
+                        driver = new ChromeDriver();
+                        break;
+                    }
+                case "firefox":
+                    if (driver == null) {
+                        WebDriverManager.firefoxdriver().setup();
+                        driver = new FirefoxDriver();
+                        break;
+                    }
+                case "ie":
+                    if (driver == null) {
+                        WebDriverManager.iedriver().setup();
+                        driver = new InternetExplorerDriver();
+                        break;
+                    }
+            }
+        } catch (Exception e) {
+            System.out.println("Unable to load the browser");
         }
 
+        wait = new WebDriverWait(driver, 10);
+
         e_driver = new EventFiringWebDriver(driver);
-        // Now create object of EventListenerHandler to register it with EventFiringWebDriver
+        // Now create object of webEventListener to register it with EventFiringWebDriver
         webEventListener = new WebEventListener();
         e_driver.register(webEventListener);
         driver = e_driver;
@@ -58,9 +81,18 @@ public class TestBase {
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
 
-        driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(Constants.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
 
-        driver.get(prop.getProperty("url"));
+        setEnvironment(prop.getProperty("environment"));
     }
+
+    private static void setEnvironment(String environment) {
+        if (environment.equals("production")) {
+            driver.get(prop.getProperty("urlProd"));
+        } else if (environment.equals("QA")) {
+            driver.get(prop.getProperty("urlQA"));
+        }
+    }
+
 }
