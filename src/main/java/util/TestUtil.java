@@ -1,6 +1,8 @@
 package util;
 
 import base.TestBase;
+import com.vimalselvam.cucumber.listener.Reporter;
+import config.Constants;
 import cucumber.api.Scenario;
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -20,10 +22,6 @@ import java.util.Date;
 
 public class TestUtil extends TestBase {
 
-    public static long IMPLICIT_WAIT = 15;
-    public static long PAGE_LOAD_TIMEOUT = 15;
-
-    public static String TESTDATA_SHEET_PATH = "*.com/app/qa/testData/AppTestData.xlsx";
 
     private static Workbook book;
     private static Sheet sheet;
@@ -31,7 +29,7 @@ public class TestUtil extends TestBase {
     public static Object[][] getTestData(String sheetName) {
         FileInputStream file = null;
         try {
-            file = new FileInputStream(TESTDATA_SHEET_PATH);
+            file = new FileInputStream(Constants.TESTDATA_SHEET_PATH);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -53,8 +51,7 @@ public class TestUtil extends TestBase {
         return data;
     }
 
-    public static String getCurrentDateAndTime()
-    {
+    public static String getCurrentDateAndTime() {
         Date now = new Date();
 
         String strDateFormat = "dd-MMM-yyyy HH:mm:ss";
@@ -64,41 +61,28 @@ public class TestUtil extends TestBase {
         return objSDF.format(now);
     }
 
-
-
-
-//    public static String takeScreenshotAtEndOfTest(String testName) throws IOException {
+//
+//    public static String takeScreenshotAtEndOfTest(Scenario scenario) throws IOException {
 //
 //        TakesScreenshot ts = (TakesScreenshot) driver;
 //
-//        File source = ts.getScreenshotAs(OutputType.FILE);
+//        File sourceFile = ts.getScreenshotAs(OutputType.FILE);
 //
 //
-//        String destination = System.getProperty("user.dir") + "/FailedTestsScreenshot/" + testName +
+//        String destination = System.getProperty("user.dir") + "/target/" + scenario.getName().replace("\\s", "_").replace("-", "_").replace(":", "_") +
 //                getCurrentDateAndTime() + ".png";
 //
 //        File finalDestination = new File(destination);
 //
-//        FileUtils.copyFile(source, finalDestination);
+//        FileUtils.copyFile(sourceFile, finalDestination);
 //
 //        return destination;
 //    }
-//
-//
-//
-//    public static void takeScreenShotOnFAILURE(Scenario scenario) throws IOException {
-//
-//        if (scenario.isFailed()) {
-//
-//            takeScreenshotAtEndOfTest(scenario.getName());
-//        }
 
-//    }
-    public static void takeScreenShot(Scenario scenario){
-        if (scenario.isFailed()){
-            final byte[] screenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-            scenario.embed(screenshot,"image/png");
-        }
+
+    public static void takeScreenShot(Scenario scenario) {
+        final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+        scenario.embed(screenshot, "image/png");
     }
 
 }

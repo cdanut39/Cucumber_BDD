@@ -10,7 +10,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 
-public class HomePage extends TestBase {
+public class HomePage extends GeneralActions {
+
+
     @FindBy(xpath = "//span[text()=' Contul meu ']")
     private WebElement contulMeuButton;
 
@@ -28,13 +30,11 @@ public class HomePage extends TestBase {
         PageFactory.initElements(driver, this);
     }
 
-    public void hoverContulMeu() {
-        wait.until(ExpectedConditions.visibilityOf(contulMeuButton));
-        Actions actions = new Actions(driver);
-        actions.moveToElement(contulMeuButton).build().perform();
+    public void hoverContulMeu() throws Exception {
+        actionMove(contulMeuButton);
     }
 
-    public String getWelcomeMessageText() {
+    public String getWelcomeMessageText() throws Exception {
         hoverContulMeu();
         return welcomeMessage.getText();
     }

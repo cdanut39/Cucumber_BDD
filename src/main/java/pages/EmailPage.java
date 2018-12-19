@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
-public class EmailPage extends TestBase {
+public class EmailPage extends GeneralActions {
     @FindBy(id = "email")
     private WebElement email_input;
     @FindBy(xpath = "//button[contains(text(),'Continua')]")
@@ -18,9 +18,9 @@ public class EmailPage extends TestBase {
         PageFactory.initElements(driver, this);
     }
 
-    public void insertEmail() {
-        wait.until(ExpectedConditions.visibilityOf(email_input));
-        email_input.sendKeys(prop.getProperty("email"));
+    public void insertEmail() throws Exception {
+
+        sendKeysToWebElement(email_input, prop.getProperty("email"));
     }
 
     public PasswordPage clickOnContinueButton() {
