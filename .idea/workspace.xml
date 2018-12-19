@@ -35,11 +35,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-664">
-              <caret line="141" column="25" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="25" />
+            <state relative-caret-position="-154">
+              <caret line="198" lean-forward="true" selection-start-line="198" selection-end-line="198" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -122,6 +140,7 @@
       <find>log</find>
       <find>avail</find>
       <find>Assert</find>
+      <find>fork</find>
     </findStrings>
     <replaceStrings>
       <replace>log.info</replace>
@@ -135,8 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/TestBase/TestBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/testbase/TestBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/app/qa/config/config" />
         <option value="$PROJECT_DIR$/src/test/com.app.qa.testcases/GooglePageTest.java" />
         <option value="$PROJECT_DIR$/src/test/com.app.qa.testcases/com/app/qa/runner/TestRunnerTest.java" />
@@ -186,6 +203,8 @@
         <option value="$PROJECT_DIR$/src/main/java/pages/DefaultPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/stepDefinitions/SortByAvailabilityStepDef.java" />
         <option value="$PROJECT_DIR$/src/main/java/features/SortByAvailability.feature" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -320,7 +339,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545230372956" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545232477267" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="last.edited.regexp" value="" />
@@ -511,6 +530,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49729145" visible="true" weight="0.17963752" />
       <window_info id="Structure" order="1" sideWeight="0.50270855" side_tool="true" weight="0.28411514" />
@@ -527,8 +547,8 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.41257995" side_tool="true" weight="0.3261105" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.5469083" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.45309168" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4488273" weight="0.33044422" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -580,20 +600,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/github/bonigarcia/webdrivermanager/3.1.1/webdrivermanager-3.1.1.jar!/io/github/bonigarcia/wdm/FirefoxDriverManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/github/bonigarcia/webdrivermanager/3.1.1/webdrivermanager-3.1.1.jar!/io/github/bonigarcia/wdm/WebDriverManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="101" column="70" lean-forward="true" selection-start-line="101" selection-start-column="70" selection-end-line="101" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.5.3/selenium-support-3.5.3-sources.jar!/org/openqa/selenium/support/events/WebDriverEventListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-765">
@@ -923,8 +929,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-664">
-          <caret line="141" column="25" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="25" />
+        <state relative-caret-position="-154">
+          <caret line="198" lean-forward="true" selection-start-line="198" selection-end-line="198" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
